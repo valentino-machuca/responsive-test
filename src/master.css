@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Poppins;
+    background: linear-gradient(black, #030b1f);
+}
+
+.header{
+    padding: 30px;
+    width: 100%;
+    height: 30px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4 3 rgb(0,0,0.5);
+}
+
+.header .logo{
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+.header .logo img{
+    width: 45px;
+}
+
+.header .menu ul{
+    color: white;
+    display: flex;
+    font-size: 15px;
+    text-decoration: none;
+}
+.header .menu ul li{
+    display: flex;
+    font-size: 12px;
+    padding-right: 20px;
+}
+
+.header .menu ul li:hover{
+    color:#0a3d62;
+}
+
+.home{
+    padding-top: 20px;
+}
+
+.home .img-home img{
+    width: 100%;
+}
+
+.home .txt-home{
+    padding: 30px;
+    color: white;
+    text-align:justify;
+    font-size: 12px;
+}
+
+.home .txt-home h3{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.career{
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding-bottom: 50px;
+}
+
+.career .card{
+    padding: 20px;
+    background-color: #010818;
+
+}
+
+.career .card img{
+    width: 100%
+}
+
+.career .card h3{
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.career .card p{
+    text-align: justify;
+    padding: 20px;
+    font-size: 10px;
+}
+
+.stats{
+    color: white;
+    text-align: center;
+    padding-bottom: 150px;
+}
+
+.stats .percentages th{
+    text-align: center;
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+.stats .percentages table{
+    padding-left: 65px;
+}
+
+.stats .info tr{
+    display: flex;
+    font-size: 10px;
+    padding-left: 25px;
+    text-align: center;
+}
+
+.stats .info th{
+    padding: 10px;
+}
+
+.stats .percentages{
+    padding-bottom: 30px;
+}
+
+.stats{
+    position: relative;
+    z-index: 2;
+}
+
+.glogo{
+    position: absolute;
+    width: 100%;
+    opacity: 0.2;
+    padding-right: 100px;
+
+}
+
+.footer{
+    background-color: black;
+    color: white;
+    display: flex;
+}
+
+.footer .logo img{
+    width: 50px;
+}
+
+.footer .logo{
+    padding: 20px;
+    padding-left: 30px;
+}
+
+.footer .data{
+    font-size: 8px;
+    text-align: center;
+    padding-left: 40px;
+    padding-top: 30px;
+}
+
+.footer .main{
+    font-size: 8px;
+    text-align: center;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+
