@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Poppins;
+    background: linear-gradient(black, #030b1f);
+}
+
+.header{
+    padding: 30px;
+    width: 100%;
+    height: 30px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4 3 rgb(0,0,0.5);
+}
+
+.header .logo{
+    padding: 5px;
+}
+
+.header .logo img{
+    width: 45px;
+}
+
+.header .menu ul{
+    display: flex;
+}
+.header .menu ul li{
+    display: flex;
+    font-size: 12px;
+    padding-right: 20px;
+}
+.header .menu a{
+    font-size: 15px;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+a:hover{
+    color:#030b1f;
+}
+
+.home{
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+.home .img-home img{
+    width: 100%;
+}
+
+.home .txt-home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    color: white;
+    text-align:justify;
+    font-size: 12px;
+}
+.home .txt-home h5{
+    text-align: center;
+}
+
+.home .txt-home img{
+    padding-top: 10px;
+    width: 30%;
+}
+
+.home .txt-home h3{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.career{
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+
+}
+
+.career .card{
+    padding: 20px;
+    background-color: #010818;
+
+}
+
+.career .card img{
+    width: 100%
+}
+
+.career .card h3{
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.career .card p{
+    text-align: justify;
+    padding: 20px;
+    font-size: 10px;
+}
+
+.stats .display{
+    position: relative;
+    display: flex;
+    padding: 30px;
+    color: white;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.stats .display .percentages{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.stats .display .percentages table th, td{
+    padding: 5px;
+    
+}
+.stats .back{
+    position: absolute;
+    opacity: 0.1;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.stats .back img{
+    width: 80%;
+}
+.stats .info{
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+.stats .info table{
+    font-size: 10px;
+}
+.stats .info table th{
+    padding: 5px;
+    color: white;
+}
+
+.footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    padding-top: 10px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.footer .logo img{
+    width: 50px;
+}
+
+.footer .data{
+    font-size: 8px;
+    text-align: center;
+}
+
+.footer .main{
+    font-size: 8px;
+    text-align: center;
+}
+
+@media screen and (min-width: 900px) {
+    .home{
+        flex-direction: row-reverse;
+    }
+    .home .txt-home{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 15px;
+    }
+    .home .img-home{
+        width: 400%;
+    }
+    .home .txt-home h5{
+        padding-top: 10px;
+        text-align: center;
+    }
+    .home .txt-home img{
+        padding-top: 10px;
+        width: 50%;
+    }
+
+    .career{
+        flex-direction: row;
+    }
+
+    .stats{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .stats .info table{
+        display: flex;
+        font-size: 16px;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .home .txt-home p{
+        font-size: 20px;
+    }
+    .home .txt-home h3{
+        font-size: 30px;
+    }
+    .stats .back img{
+        width: 50%;
+    }
+}
